@@ -212,7 +212,7 @@ img {
   border-radius: 0px 3px 3px 0px;
 }
 .header__search img {
-  height: 18px;
+  height: 33px;
 }
 .header__right {
   display: flex;
@@ -249,6 +249,7 @@ a {
 .cart__dropdown {
   padding: 20px;
   top: 37px;
+  width: 206px;
   background-color: #fff;
   flex-direction: column;
   font-size: 14px;
@@ -273,6 +274,102 @@ a {
   transform: rotate(45deg);
   border-top: 1px solid #e8e8e8;
   border-left: 1px solid #e8e8e8;
+}
+.cart__total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.cart__item {
+  display: flex;
+  gap: 14px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(237, 237, 237, 0.74);
+}
+.cart__item:hover {
+  filter: opacity(0.7);
+}
+.cart__item__name {
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.cart__item__price {
+  display: flex;
+  justify-content: space-between;
+  color: #f16d7f;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.cart__item__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cart__item__rate {
+  display: flex;
+  flex-direction: row;
+}
+.cart__item img {
+  width: 72px;
+  height: 85px;
+}
+.cart__item__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.cart__buttons__frame {
+  border: 1px solid #f16d7f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart__buttons__frame:hover {
+  background-color: #f16d7f;
+}
+.cart__buttons__frame:hover .cart__buttons__checkout {
+  color: #fff;
+}
+.cart__buttons__frame__back {
+  border: 1px solid #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart__buttons__frame__back:hover {
+  background-color: #a4a4a4;
+}
+.cart__buttons__frame__back:hover .cart__buttons__back {
+  color: #fff;
+}
+.cart__buttons__checkout {
+  margin: 19px;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f16d7f;
+}
+.cart__buttons__back {
+  margin: 19px;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222;
 }
 
 .menu :hover {
